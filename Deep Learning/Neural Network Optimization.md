@@ -28,9 +28,25 @@ Overfitting 발생 가능성 높아짐
 Lasso, Ridge 모두 적용
    > Weight Decay(가중치 감퇴/감소)
 
-- Regulariztion rate (𝜆 )
-  - Hyper parameter
-  - 𝜆 스칼라값
-  - 정규화 함수의 상대적 중요도 지정
-  - 정규화율을 높이면 overfitting 감소, 하지만 underfitting 가능
-  - 𝚹의 수가 많은 신경망은 정규화율을 아주 작게 주기도 함
+* Regulariztion rate (𝜆 )
+  * Hyper parameter
+  * 𝜆 스칼라값
+  * 정규화 함수의 상대적 중요도 지정
+  * 정규화율을 높이면 overfitting 감소, 하지만 underfitting 가능
+  * 𝚹의 수가 많은 신경망은 정규화율을 아주 작게 주기도 함
+
+### Advanced gradient dcscent algorithms
+1. (Full-Batch) Gradient Descent
+   1. 학습이 오래걸림
+   2. cost 그래프가 안정적
+2. SGD (Stochastic Gradient Descent)
+   1. Batch size = 1 마다 cost계산 -> Gradient descent 계산 -> weight 빠르게 업데이트
+   2. 속도가 빠르다
+   3. cost 그래프가 변동이 심해 안정적 감소중인지 예측 하기 어려움
+3. Mini-Batch SGD
+   1. Full batch 대비 batch 갯수 정함
+   2. Batch size 만큼씩 cost 계산
+   3. 의도에 따라 속도와 안정성 동시 관리 가능
+   4. GPU 기반 효율적인 병렬 연산 가능
+   5. Adam
+   6. RAdam
