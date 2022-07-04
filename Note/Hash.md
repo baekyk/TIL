@@ -30,7 +30,7 @@
     
 ||HashSet|HashMap|HashTable|
 |--|--|--|--|
-|allow null |1 value	|1 key , n value|-|
+|allow null |1 key, 1 value	|1 key , n value|-|
 |order|	no|	no|	no|
 
 
