@@ -1,3 +1,5 @@
+### Closure
+
 * technique for implementing lexically scoped name binding in a language with first-class functions
 * record storing a function[a] together with an environment
 
